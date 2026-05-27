@@ -19,13 +19,13 @@ class Magatzem {
                     articles[i].calidad = articles[i].calidad + 1;
 
                     if (articles[i].nombre.equals("Entrades per al Concert del Trobador")) {
-                        if (articles[i].diesPerVendre < 11) {
+                        if (articles[i].diasParaVender < 11) {
                             if (articles[i].calidad < 50) {
                                 articles[i].calidad = articles[i].calidad + 1;
                             }
                         }
 
-                        if (articles[i].diesPerVendre < 6) {
+                        if (articles[i].diasParaVender < 6) {
                             if (articles[i].calidad < 50) {
                                 articles[i].calidad = articles[i].calidad + 1;
                             }
@@ -35,10 +35,10 @@ class Magatzem {
             }
 
             if (!articles[i].nombre.equals("Martell de Thor (Llegendari)")) {
-                articles[i].diesPerVendre = articles[i].diesPerVendre - 1;
+                articles[i].diasParaVender = articles[i].diasParaVender - 1;
             }
 
-            if (articles[i].diesPerVendre < 0) {
+            if (articles[i].diasParaVender < 0) {
                 if (!articles[i].nombre.equals("Formatge Gidurat")) {
                     if (!articles[i].nombre.equals("Entrades per al Concert del Trobador")) {
                         if (articles[i].calidad > 0) {

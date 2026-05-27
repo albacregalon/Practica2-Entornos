@@ -1,11 +1,11 @@
 class Article {
     public String nombre;
-    public int diesPerVendre;
+    public int diasParaVender;
     public int calidad;
 
-    public Article(String nom, int diesPerVendre, int qualitat) {
+    public Article(String nom, int diasParaVender, int qualitat) {
         this.nombre = nombre;
-        this.diesPerVendre = diesPerVendre;
+        this.diasParaVender = diasParaVender;
         this.calidad = calidad;
     }
 }

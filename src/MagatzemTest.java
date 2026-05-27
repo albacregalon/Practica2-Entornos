@@ -7,7 +7,7 @@ class MagatzemTest {
     void testDegradacioNormal() {
         Article[] art = { new Article("Poma", 10, 20) };
         new Magatzem(art).actualitzarEstat();
-        assertEquals(9, art[0].diesPerVendre, "Els dies haurien de baixar en 1");
+        assertEquals(9, art[0].diasParaVender, "Els dies haurien de baixar en 1");
         assertEquals(19, art[0].calidad, "La calidad hauria de baixar en 1");
     }
 
@@ -30,6 +30,6 @@ class MagatzemTest {
         Article[] art = { new Article("Martell de Thor (Llegendari)", 10, 80) };
         new Magatzem(art).actualitzarEstat();
         assertEquals(80, art[0].calidad, "La calidad del Martell no ha de canviar");
-        assertEquals(10, art[0].diesPerVendre, "Els dies del Martell no han de canviar");
+        assertEquals(10, art[0].diasParaVender, "Els dies del Martell no han de canviar");
     }
 }

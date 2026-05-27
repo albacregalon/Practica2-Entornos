@@ -3,7 +3,7 @@ class Article {
     public int diasParaVender;
     public int calidad;
 
-    public Article(String nom, int diasParaVender, int qualitat) {
+    public Article(String nom, int diasParaVender, int calidad) {
         this.nombre = nombre;
         this.diasParaVender = diasParaVender;
         this.calidad = calidad;
